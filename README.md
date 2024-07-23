@@ -1,2 +1,2 @@
 # SIMAK
-Sistem Informasi Anak (SIMAK) App For Elementary School
+Sistem Informasi Anak Untuk Sekolah Dasar

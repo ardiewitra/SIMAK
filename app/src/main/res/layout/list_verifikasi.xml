@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nama"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Nama"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_email"
+        android:layout_marginLeft="8dp"
+        android:text="email"
+        android:singleLine="true"
+        android:layout_below="@+id/tv_nama"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nomor_telpon"
+        android:layout_marginLeft="8dp"
+        android:text="nomot telpon"
+        android:singleLine="true"
+        android:layout_below="@+id/tv_email"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/iv_verif"
+        android:visibility="gone"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/icon_verif"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/iv_unverif"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/icon_unverif"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_terverifikasi"
+        android:text="Terverifikasi"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/tv_nomor_telpon"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_belum_terverifikasi"
+        android:text="Belum Terverifikasi"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@+id/tv_nomor_telpon"/>
+
+</RelativeLayout>
